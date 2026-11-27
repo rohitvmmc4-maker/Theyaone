@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f8f4eb">
+<meta name="description" content="Theya Wellness — dermatology, skin, hair and aesthetic care in Kaushambi, Ghaziabad.">
+<title>THEYA WELLNESS | Skin, Hair & Aesthetic Care</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="assets/theya-app-icon-192.png">\n<link rel="apple-touch-icon" href="assets/theya-app-icon-192.png">
+<style>
+:root{--gold:#b68a36;--gold2:#d6b66d;--ink:#29251f;--muted:#777064;--cream:#fffaf3;--ivory:#f5eee3;--line:#e7ddca;--white:#fff;--green:#174b32;--shadow:0 14px 38px rgba(75,57,26,.09)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5}
+a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.wrap{width:min(1120px,92%);margin:auto}
+.topbar{background:#174b32;color:#f8f2e5;font-size:12px;padding:8px 0;text-align:center;letter-spacing:.08em}
+header{position:sticky;top:0;z-index:20;background:rgba(251,248,241,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:12px}.brand img{width:54px;height:54px;object-fit:contain}.brand strong{font-family:Georgia,serif;letter-spacing:.19em;font-size:18px}.brand small{display:block;color:var(--muted);font-size:9px;letter-spacing:.24em}
+.links{display:flex;align-items:center;gap:22px;font-size:13px;color:#5d5548}.links a:hover{color:var(--gold)}.btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--gold);background:var(--gold);color:white;padding:12px 20px;border-radius:4px;font-weight:600;cursor:pointer;transition:.2s}.btn:hover{background:#96702b}.btn.outline{background:transparent;color:var(--gold)}.btn.dark{background:#29251f;border-color:#29251f}.menu{display:none;background:none;border:0;font-size:26px}
+.hero{padding:64px 0 58px;background:radial-gradient(circle at 82% 22%,#efe3c9 0,transparent 34%),linear-gradient(115deg,#fffaf3,#f5eee3)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:48px}.eyebrow{color:var(--gold);letter-spacing:.22em;text-transform:uppercase;font-size:11px;font-weight:700}.hero h1{font:clamp(38px,5vw,62px)/1.08 Georgia,serif;font-weight:500;margin:16px 0}.hero h1 em{color:var(--gold);font-weight:400}.hero p{max-width:560px;color:#6c6458;font-size:16px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.doctor-frame{position:relative;max-width:470px;margin:auto}.doctor-frame:before{content:"";position:absolute;inset:20px -15px -15px 20px;border:1px solid var(--gold2);z-index:0}.doctor-frame img{position:relative;z-index:1;width:100%;height:470px;object-fit:cover;object-position:center 22%;border-radius:2px;box-shadow:var(--shadow)}.doctor-tag{position:absolute;z-index:2;bottom:22px;left:-24px;background:#fffdf8;padding:15px 20px;box-shadow:var(--shadow);border-left:3px solid var(--gold)}.doctor-tag b{display:block;font:18px Georgia,serif}.doctor-tag span{font-size:11px;color:var(--muted)}
+.trust{background:#fffdf8;border-block:1px solid var(--line)}.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);padding:22px 0;gap:14px;text-align:center}.trust strong{display:block;color:var(--gold);font:24px Georgia,serif}.trust span{font-size:11px;color:var(--muted);letter-spacing:.05em}
+section{padding:76px 0}.section-head{text-align:center;max-width:680px;margin:0 auto 38px}.section-head h2{font:clamp(30px,4vw,42px) Georgia,serif;font-weight:500;margin:9px 0}.section-head p{color:var(--muted);margin:0}
+.about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:48px;align-items:center}.about-photo{background:var(--ivory);padding:14px;border:1px solid var(--line)}.about-photo img{width:100%;display:block;max-height:420px;object-fit:cover;object-position:center 20%}.about-copy h2{font:38px Georgia,serif;font-weight:500;margin:8px 0 14px}.about-copy p{color:var(--muted)}.credentials{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0}.pill{border:1px solid var(--line);padding:8px 12px;color:#665b48;background:#fffdf8;font-size:12px;border-radius:30px}
+.services{background:#f5efe4}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.service{background:#fffdf8;border:1px solid var(--line);padding:22px;min-height:150px;transition:.2s}.service:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--gold2)}.service .ico{font-size:25px}.service h3{font:20px Georgia,serif;margin:10px 0 5px}.service p{color:var(--muted);font-size:13px;margin:0}
+.feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center}.feature-grid img{width:100%;border:8px solid white;box-shadow:var(--shadow)}.feature-grid h2{font:36px Georgia,serif;font-weight:500}.feature-grid p{color:var(--muted)}
+.booking{background:linear-gradient(140deg,#29251f,#423723);color:#f8f2e5}.booking .section-head p{color:#d4c9b4}.booking-card{max-width:850px;margin:auto;background:#fffdf8;color:var(--ink);padding:30px;border:1px solid var(--gold2);box-shadow:0 20px 50px #17130e55}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}.field label{font-size:12px;font-weight:700;color:#665b48}.field input,.field select,.field textarea{width:100%;border:1px solid #ded4c1;background:#fff;padding:12px;border-radius:3px;color:var(--ink);outline-color:var(--gold)}.field textarea{min-height:84px;resize:vertical}.slot-wrap{margin-top:22px}.slot-wrap h3{font:21px Georgia,serif;margin:0 0 12px}.slot-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.slot{padding:12px 8px;border:1px solid #d9c9a8;background:#fffaf0;color:#57482b;cursor:pointer;border-radius:3px}.slot.active{background:var(--gold);color:white;border-color:var(--gold)}.slot:disabled{opacity:.4;cursor:not-allowed}.note{font-size:12px;color:#7b7264;margin:12px 0}.submit-row{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:22px}.submit-row .btn{min-width:210px}.privacy{font-size:11px;color:#817767}
+.clinic-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}.clinic-box{background:#fffdf8;border:1px solid var(--line);padding:25px}.clinic-box h3{font:23px Georgia,serif;margin:0 0 12px}.clinic-box p{color:var(--muted);font-size:14px}.map{width:100%;height:270px;border:0;background:#eee}
+footer{background:#173c2b;color:#eee5d5;padding:42px 0 24px}.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:28px}.footer-brand{font:24px Georgia,serif;letter-spacing:.15em}.footer-grid p,.footer-grid a{font-size:13px;color:#c8bda9}.copyright{border-top:1px solid #514735;margin-top:30px;padding-top:18px;color:#9f9583;font-size:11px}
+.floating{position:fixed;right:18px;bottom:18px;z-index:30;background:#1e8e58;color:#fff;border-radius:40px;padding:13px 18px;box-shadow:0 8px 24px #0003;font-weight:700}
+@media(max-width:800px){.qr-panel{grid-template-columns:1fr!important}.qr-panel>div:first-child{max-width:220px;margin:auto}.profile-card{grid-template-columns:1fr!important}.profile-card img{max-width:300px;margin:auto}.links{display:none;position:absolute;top:78px;left:0;right:0;background:var(--cream);padding:20px 5%;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.links.open{display:flex}.menu{display:block}.nav>.btn{display:none}.hero{padding:42px 0}.hero-grid,.about-grid,.feature-grid,.clinic-grid{grid-template-columns:1fr}.doctor-frame{max-width:390px;margin:18px auto 0}.doctor-frame img{height:390px}.trust-grid{grid-template-columns:repeat(2,1fr)}section{padding:56px 0}.service-grid{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:1fr 1fr}.footer-grid>div:first-child{grid-column:1/-1}}
+@media(max-width:520px){.brand strong{font-size:15px}.brand img{width:46px;height:46px}.hero h1{font-size:40px}.service-grid{grid-template-columns:1fr 1fr;gap:10px}.service{padding:15px;min-height:145px}.service h3{font-size:17px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.booking-card{padding:18px}.slot-grid{grid-template-columns:1fr 1fr}.doctor-tag{left:-5px}.footer-grid{grid-template-columns:1fr}.footer-grid>div:first-child{grid-column:auto}}
+</style>
+</head>
+<body>
+<div class="topbar">THEYA WELLNESS · CENTER FOR DERMATOLOGY &amp; HEMATO-ONCOLOGY</div>
+<header><div class="wrap nav">
+<a class="brand" href="#home"><img src="assets/theya-logo.png" alt="Theya Wellness logo"><span><strong>THEYA WELLNESS</strong><small>SKIN · HAIR · AESTHETICS</small></span></a>
+<nav class="links" id="navlinks"><a href="#home">Home</a><a href="#doctor">Our Doctor</a><a href="#services">Treatments</a><a href="#booking">Appointments</a><a href="#quick-book">Scan to Book</a><a href="#clinic">Find Us</a></nav>
+<a class="btn" href="#booking">Book Appointment</a><button class="menu" aria-label="Open menu" onclick="document.getElementById('navlinks').classList.toggle('open')">☰</button>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-grid">
+<div><div class="eyebrow">A more thoughtful approach to skin health</div><h1>Confidence begins with <em>healthy skin.</em></h1><p>Personalised dermatology, advanced laser treatments and aesthetic care — guided by medical expertise and delivered with care.</p><div class="hero-actions"><a class="btn" href="#booking">Book a Consultation</a><a class="btn outline" href="#services">Explore Treatments</a></div></div>
+<div class="doctor-frame"><img src="assets/dr-soumya-sachdeva.jpg" alt="Dr. Soumya Sachdeva"><div class="doctor-tag"><b>Dr. Soumya Sachdeva</b><span>Senior Consultant Dermatologist</span></div></div>
+</div></section>
+<div class="trust"><div class="wrap trust-grid"><div><strong>Doctor-led</strong><span>PERSONALISED CARE</span></div><div><strong>Advanced</strong><span>LASER TECHNOLOGY</span></div><div><strong>Skin · Hair</strong><span>COMPREHENSIVE SERVICES</span></div><div><strong>Kaushambi</strong><span>GHAZIABAD, NCR</span></div></div></div>
+<section id="doctor"><div class="wrap about-grid"><div class="about-photo"><img src="assets/dr-soumya-sachdeva.jpg" alt="Dr Soumya Sachdeva, dermatologist"></div><div class="about-copy"><div class="eyebrow">Meet your dermatologist</div><h2>Dr. Soumya Sachdeva</h2><p><b>Senior Consultant Dermatologist</b></p><p>MBBS, MD (DVL), DNB, MNAMS, ECFMG (USA). Dr. Sachdeva provides doctor-led care across clinical dermatology, hair restoration, lasers and aesthetic procedures.</p><div class="credentials"><span class="pill">MBBS</span><span class="pill">MD (DVL)</span><span class="pill">DNB</span><span class="pill">MNAMS</span><span class="pill">ECFMG (USA)</span></div><a class="btn" href="#booking">Consult Dr. Soumya</a></div></div></section>
+<section id="doctor-profile" style="background:#fffdf8;padding-top:12px">
+<div class="wrap">
+<div class="section-head"><div class="eyebrow">Doctor profile</div><h2>Meet your skin &amp; hair specialist</h2><p>Expert-led dermatology and aesthetic care at Theya Wellness.</p></div>
+<div class="profile-card" style="display:grid;grid-template-columns:260px 1fr;gap:28px;align-items:center;background:#fbf8f1;border:1px solid var(--line);padding:24px;box-shadow:var(--shadow)">
+<img src="assets/dr-soumya-sachdeva.jpg" alt="Portrait of Dr. Soumya Sachdeva" style="width:100%;height:310px;object-fit:cover;object-position:center 20%;border:6px solid white">
+<div>
+<div class="eyebrow">Senior Consultant Dermatologist</div>
+<h2 style="font:34px Georgia,serif;font-weight:500;margin:8px 0">Dr. Soumya Sachdeva</h2>
+<p style="color:var(--muted);margin:0 0 14px">MBBS · MD (DVL) · DNB · MNAMS · ECFMG (USA)</p>
+<p style="color:#6c6458">Dr. Soumya Sachdeva offers consultation and personalised treatment planning for skin, hair and aesthetic concerns. Her clinical interests include advanced laser procedures, acne and acne-scar management, pigmentation, hair restoration and minimally invasive aesthetic treatments.</p>
+<div class="credentials"><span class="pill">Clinical Dermatology</span><span class="pill">Laser Dermatology</span><span class="pill">Hair Restoration</span><span class="pill">Aesthetic Dermatology</span></div>
+<div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn" href="#booking">Book with Dr. Soumya</a><a class="btn outline" href="https://wa.me/919667662291?text=Hello%20Theya%20Wellness%2C%20I%20would%20like%20to%20know%20more%20about%20Dr.%20Soumya%20Sachdeva." target="_blank" rel="noopener">Ask on WhatsApp</a></div>
+</div></div>
+</div></section>
+<section class="services" id="services"><div class="wrap"><div class="section-head"><div class="eyebrow">Theya treatment menu</div><h2>Care designed around you</h2><p>Explore our dermatology, hair restoration and aesthetic services. Suitability and treatment plans are decided after consultation.</p></div>
+<div class="service-grid">
+<div class="service"><div class="ico">✦</div><h3>Facial Fat Grafting</h3><p>Restore facial volume using your own fat, following specialist assessment.</p></div>
+<div class="service"><div class="ico">◉</div><h3>Regenera Activa (AMT)</h3><p>Autologous micrografting approach for selected hair-thinning concerns.</p></div>
+<div class="service"><div class="ico">✧</div><h3>Dermal Fillers</h3><p>Doctor-led facial volume restoration and contouring.</p></div>
+<div class="service"><div class="ico">✳</div><h3>Botox</h3><p>Expression-line treatment with an individualised assessment.</p></div>
+<div class="service"><div class="ico">♧</div><h3>Hair PRP / GFC</h3><p>Growth-factor therapies for selected hair-loss concerns.</p></div>
+<div class="service"><div class="ico">❋</div><h3>Medi-Facials &amp; HydraFacial</h3><p>Medical-grade skin cleansing, hydration and rejuvenation.</p></div>
+<div class="service"><div class="ico">⌁</div><h3>Hair Transplant</h3><p>Hair restoration planning and specialist consultation.</p></div>
+<div class="service"><div class="ico">⚡</div><h3>Laser Hair Reduction</h3><p>Modern laser-based reduction of unwanted hair.</p></div>
+<div class="service"><div class="ico">◇</div><h3>Acne Scars &amp; Pigmentation</h3><p>Personalised programmes for scars, marks and uneven tone.</p></div>
+<div class="service"><div class="ico">✧</div><h3>Advanced Laser Treatments</h3><p>Laser-based options selected according to skin concern and skin type.</p></div>
+<div class="service"><div class="ico">♡</div><h3>Clinical Dermatology</h3><p>Consultation for common skin, scalp and hair conditions.</p></div>
+<div class="service"><div class="ico">＋</div><h3>Hemato-Oncology</h3><p>Specialist consultation with Dr. Rohit Kapoor by appointment.</p></div>
+</div></div></section>
+<section><div class="wrap feature-grid"><img src="assets/treatments-collage.jpg" alt="Examples of skin and aesthetic treatment procedures"><div><div class="eyebrow">Technology with a human touch</div><h2>Thoughtful treatments. Personalised plans.</h2><p>From skin rejuvenation and pigmentation care to hair restoration and aesthetic procedures, every plan begins with a consultation and an understanding of your goals.</p><a class="btn outline" href="#booking">Discuss your concern</a></div></div></section>
+<section class="booking" id="booking"><div class="wrap"><div class="section-head"><div class="eyebrow">Your visit starts here</div><h2>Request an appointment</h2><p>Share your details and preferred time. Our team will confirm availability on WhatsApp.</p></div>
+<div class="booking-card"><form id="bookingForm">
+<div class="form-grid">
+<div class="field"><label for="name">Patient full name *</label><input id="name" name="name" required placeholder="Enter patient name"></div>
+<div class="field"><label for="phone">Mobile number *</label><input id="phone" name="phone" type="tel" required pattern="[0-9 +()-]{10,16}" placeholder="+91"></div>
+<div class="field"><label for="email">Email (optional)</label><input id="email" name="email" type="email" placeholder="name@email.com"></div>
+<div class="field"><label for="doctorChoice">Doctor *</label><select id="doctorChoice" name="doctor" required><option value="Dr. Soumya Sachdeva">Dr. Soumya Sachdeva – Dermatology</option><option value="Dr. Rohit Kapoor">Dr. Rohit Kapoor – Hematology, Oncology &amp; BMT</option></select></div>
+<div class="field"><label for="mode">Consultation type *</label><select id="mode" name="mode"><option>In-clinic appointment</option><option>Video consultation (subject to availability)</option></select></div>
+<div class="field"><label for="service">Service / concern *</label><select id="service" name="service" required><option value="">Choose a service</option><option>Dermatology consultation</option><option>Acne scars & pigmentation</option><option>Laser hair reduction</option><option>HydraFacial / Medi-Facial</option><option>Hair PRP / GFC</option><option>Regenera Activa</option><option>Hair transplant consultation</option><option>Botox / Dermal fillers</option><option>Facial fat grafting</option><option>Other / Not sure – need guidance</option><option>Hematology / Oncology consultation</option></select></div>
+<div class="field"><label for="date">Preferred date *</label><input id="date" name="date" type="date" required></div>
+<div class="field"><label for="timeSlot">Preferred 2-hour slot *</label><select id="timeSlot" name="timeSlot" required><option value="">Select a slot below</option></select></div>
+<div class="field full"><label for="message">Brief note (optional)</label><textarea id="message" name="message" placeholder="Tell us briefly what you would like to discuss. Please do not share emergency details here."></textarea></div>
+</div>
+<div class="slot-wrap"><h3>Choose a preferred time window</h3><div class="slot-grid" id="slotButtons"></div><p class="note">Clinic hours: 10:00 AM–7:00 PM, all days. Time windows are preference requests, not live-confirmed slots. The clinic team will confirm by WhatsApp.</p></div>
+<div class="submit-row"><button class="btn" type="submit">Send appointment request on WhatsApp</button><span class="privacy">Your WhatsApp app will open with the request pre-filled. Nothing is booked until the clinic confirms.</span></div>
+</form></div></div></section>
+<section id="quick-book" style="background:#fffaf3;padding:48px 0">
+<div class="wrap">
+<div class="section-head"><div class="eyebrow">Scan · Book · Visit</div><h2>Book your visit to Theya Wellness</h2><p>Scan the QR code to open the appointment page, or contact our team directly on WhatsApp.</p></div>
+<div class="qr-panel" style="max-width:850px;margin:auto;display:grid;grid-template-columns:220px 1fr;gap:28px;align-items:center;background:#f5eee3;border:1px solid var(--gold2);padding:26px">
+<div style="background:#fff;padding:12px;text-align:center;border:1px solid var(--line)"><img src="assets/theya-booking-qr.png" alt="QR code to book an appointment at Theya Wellness" style="width:100%;display:block"><b style="display:block;margin-top:8px;color:#174b32">SCAN TO BOOK</b></div>
+<div><div class="eyebrow">Theya Wellness · Kaushambi</div><h3 style="font:28px Georgia,serif;margin:8px 0">Your appointment, made simple.</h3>
+<p style="color:var(--muted)">Use the QR code to open the online booking page. You can choose your doctor, consultation type, preferred date and time, then send your request for confirmation.</p>
+<p><b>Clinic hours:</b> Monday–Sunday, 10:00 AM–7:00 PM</p>
+<p><b>Address:</b> Unit 518, 5th Floor, KM Trade Tower, Sector 14, Kaushambi, Ghaziabad, Uttar Pradesh 201010</p>
+<div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn" href="https://theyawellness.com/theya-live/theyaone/index.html#booking" target="_blank" rel="noopener">Book online</a><a class="btn outline" href="https://www.google.com/maps/search/?api=1&query=Unit+518+KM+Trade+Tower+Kaushambi+Ghaziabad" target="_blank" rel="noopener">Get directions</a></div>
+</div></div></div></section>
+<section id="clinic"><div class="wrap"><div class="section-head"><div class="eyebrow">Visit Theya Wellness</div><h2>Find us in Kaushambi</h2><p>Our new clinic is located adjacent to Radisson Blu.</p></div>
+<div class="clinic-grid"><div class="clinic-box"><h3>Clinic details</h3><p><b>THEYA WELLNESS</b><br>Unit Number 518, 5th Floor, KM Trade Tower, Sector 14, Kaushambi, Ghaziabad, Uttar Pradesh 201010</p><p><b>Hours</b><br>Monday–Sunday · 10:00 AM–7:00 PM</p><p><b>Call / WhatsApp</b><br><a href="tel:+919667662291">+91 96676 62291</a></p><p><b>Email</b><br><a href="mailto:theya.wellness@gmail.com">theya.wellness@gmail.com</a><br><a href="mailto:theyaone@theyawellness.com">theyaone@theyawellness.com</a></p><a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Unit+518+KM+Trade+Tower+Kaushambi+Ghaziabad">Get directions</a></div>
+<iframe class="map" title="Map to Theya Wellness" loading="lazy" src="https://www.google.com/maps?q=KM%20Trade%20Tower%20Kaushambi%20Ghaziabad&output=embed"></iframe></div></div></section>
+</main>
+<footer><div class="wrap"><div class="footer-grid"><div><div class="footer-brand">THEYA WELLNESS</div><p>Center for Dermatology &amp; Hemato-Oncology<br>Skin · Hair · Aesthetics · Advanced Care</p></div><div><b>Explore</b><p><a href="#doctor">Our Doctor</a><br><a href="#services">Treatments</a><br><a href="#booking">Book Appointment</a></p></div><div><b>Contact</b><p>+91 96676 62291<br>theya.wellness@gmail.com<br>Kaushambi, Ghaziabad</p></div></div><div class="copyright">© Theya Wellness. All rights reserved. Results vary from person to person. Treatment suitability is determined after consultation.</div></div></footer>
+<a class="floating" href="https://wa.me/919667662291" target="_blank" rel="noopener">WhatsApp Us</a>
+<script>
+const slots=["10:00 AM – 12:00 PM","12:00 PM – 2:00 PM","2:00 PM – 4:00 PM","4:00 PM – 6:00 PM","6:00 PM – 7:00 PM"];
+const slotButtons=document.getElementById("slotButtons"), slotSelect=document.getElementById("timeSlot");
+slots.forEach((s,i)=>{const b=document.createElement("button");b.type="button";b.className="slot";b.textContent=s;b.addEventListener("click",()=>{document.querySelectorAll(".slot").forEach(x=>x.classList.remove("active"));b.classList.add("active");slotSelect.value=s});slotButtons.appendChild(b);const o=document.createElement("option");o.value=s;o.textContent=s;slotSelect.appendChild(o)});
+slotSelect.addEventListener("change",()=>{document.querySelectorAll(".slot").forEach(x=>x.classList.toggle("active",x.textContent===slotSelect.value))});
+const dateInput=document.getElementById("date");const now=new Date();dateInput.min=new Date(now.getTime()-now.getTimezoneOffset()*60000).toISOString().slice(0,10);
+document.getElementById("bookingForm").addEventListener("submit",e=>{e.preventDefault();const f=new FormData(e.currentTarget);const msg=[
+"THEYA WELLNESS – APPOINTMENT REQUEST","",
+"Patient: "+f.get("name"),"Mobile: "+f.get("phone"),"Email: "+(f.get("email")||"Not provided"),
+"Doctor: "+f.get("doctor"),"Consultation: "+f.get("mode"),"Service: "+f.get("service"),
+"Preferred date: "+f.get("date"),"Preferred time: "+f.get("timeSlot"),"Note: "+(f.get("message")||"None"),"",
+"Please confirm availability. Thank you."
+].join("\n");window.open("https://wa.me/919667662291?text="+encodeURIComponent(msg),"_blank","noopener");});
+if("serviceWorker" in navigator && location.protocol.startsWith("http")){window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}));}
+</script>
+</body></html>
